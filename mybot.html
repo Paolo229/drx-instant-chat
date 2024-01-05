@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Expires" content="0">
+   <script src="jstnull.js" defer> </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8235225560445026"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <title>DRX-INSTANT-CHAT</title>
+  </head>
+  <style>
+  body{
+  background:#ffe;
+  }
+  #hed{
+    background:#232324;
+  color:gray;
+  font-weight:bold;
+  muargin:2%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   bordeir-bottom:0.1px solid gray; 
+  }
+  textarea{width:100%;
+  background:#cbe0e0e0;
+  border-radius:8px;
+    }
+  #ck{margin:1%;}
+ #send{
+  width: 40px;
+  height: 40px;
+  
+  border-radius:50%;
+  margin-left:1%;
+   margin-top:1%;
+  background:darkgreen;
+  border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #mode{
+  
+  width: 50x;
+  height: 50px;
+  
+  border-radius:50%;
+  margtin-left:1%;
+  margin-top:1%;
+  backuground:darkgreen;
+  border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #tn{margin-left:15%;
+ cholor:red; }
+  #user{
+  min-width:10%;
+  margin-top:4%;
+  margin-left:1%;
+  margin-right:1%;
+  background:#0007;
+  min-height:15px;
+  border-radius:8px;
+  text-margin:10%;
+  white-space:normal;
+     word-wrap:break-word;
+   max-width:70%;
+  }
+  button:focus{
+  outline:none;
+  }
+  textarea:focus{
+  outline:none;
+  }
+  #bot{
+  min-width:10%;
+ max-width:75%;
+  margin-right:1%;
+  white-space:normal;
+     word-wrap:break-word;
+   mwidth:90%;
+  margin-top:4%;
+  margin-left:1%;
+   min-height:15px;
+  background:dodgerblue;
+  border-radius:8px;
+  }
+  #container{
+  font-size:18px;
+  margin:1%;
+  margin-top:21%;
+  uborder:1px solid blue;
+  color:#000;
+  min-height:510px;
+  max-height:510px;
+  overflow:auto;
+  }
+  #fl{display:flex;
+  margin-top:2%;
+  }
+  #pic2,#pic{margin-top:%;
+  margin-left:%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  background-image: url(' '); 
+ 
+  background-size: cover;
+  background-position: center;
+  display: ;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+  }
+  #type{
+  background:dodgerblue;
+  font-weight:bold;
+  border-radius:8px;
+  margin:2%;}
+  .im{margin-left:15%;
+  width: 50px;
+  height: 50px;
+  
+  border-radius:50%;
+  margtin-left:1%;
+  margin-top:1%;
+  backuground:darkgreen;
+  border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+  em{
+  font-weight:bold;
+  }
+  #imgG{
+  width: 40px;
+  height: 40px;
+  display:none;
+  border-radius:8px;
+  margin-left:-1%;
+  margin-top:1%;
+  background:darkgreen;
+  border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #TEXT{
+  width: 40px;
+  height: 40px;
+  
+  border-radius:8px;
+  margin-left:-1%;
+  margin-top:1%;
+  background:darkgreen;
+  border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #svg{
+  height:25px; width:25px;
+  }
+  a{
+  text-decoration:none;
+  color:#fff;
+  font-weight:bold;
+  height:60px;
+  width:25%;
+  text-align:center;
+  bjackground:darkgreen;
+  border-radius:8px;
+  }
+  #p{
+  position:absolute;
+  }
+  </style>
+<body>
+<div id="p">
+<a title="GDPR-compliant Web Analytics" href="https://clicky.com/101439088"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+<script async data-id="101439088" src="//static.getclicky.com/js"></script>
+</div>
+<div  class="fixed-top">
+<div id="hed" class="d-flex justify-content-between">
+<div> <img class="im"  src="icoAo.jpg"><br><em>Instant Chat</em></div> <div id="hmg"></div> <div><button id="mode">Mode</button ><br><div id="tn">Clair</div></div>
+</div>
+</div>
+<input hidden id="user">
+<div id="container">
+</div>
+<div class="fixed-bottom">
+<div id="ck" class="d-flex justify-content-between">
+<button id="imgG">  <svg id="svg" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 16 20">
+    <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z"/>
+    <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"/>
+  </svg>
+  </button>
+  
+  <button id="TEXT">
+  <svg id="svg" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 18 14">
+  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 2V1h10v1M6 1v12m-2 0h4m3-6V6h6v1m-3-1v7m-1 0h2"/>
+  </svg>  
+  </button>
+  <textarea id="query"></textarea>
+<button type="submit" id="send">
+<svg xmlns="http://www.w3.org/2000/svg" class="send-button" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+<path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+<path d="M0 0h24v24H0z" fill="none"/>
+</svg></button>
+</div>
+
+</div>
+</body>
+<script type="text/javascript">
+f
+let IMG = "0";
+let TEXT = document.getElementById("TEXT");
+let imgG = document.getElementById("imgG");
+let hed = document.getElementById("hed");
+let mode = document.getElementById("mode");
+let tn= document.getElementById("tn");
+let modeS = "2";
+let statu = "0";
+let textU = "0";
+let query = document.getElementById("query");
+let send = document.getElementById("send");
+let container = document.getElementById("container");
+let user = document.getElementById("user");
+let msg = document.getElementById("user");
+let time = "";
+let img = "";
+let text = "";
+let div = "";
+let btn = "";
+
+let msg2 = "";
+let img2 = "";
+let text2 = "";
+let div2 = "";
+let btn2 = "";
+
+
+let msg4 = "";
+let img4 = "";
+let text4 = "";
+let div4 = "";
+let btn4= "";
+
+let msg5 = "";
+let img5 = "";
+let text5 = "";
+let div5 = "";
+let btn5= "";
+
+
+let msg6 = "";
+let img6 = "";
+let text6 = "";
+let div6 = "";
+let btn6= "";
+
+let msg7 = "";
+let img7 = "";
+let text7 = "";
+let div7= "";
+let btn7= "";
+let LIEN7 = "";
+let heureActuel
+
+let msg8= "";
+let img8 = "";
+let text8 = "";
+let div8 = "";
+let btn8 = "";
+
+
+heureActuelle = new Date().getHours();
+if (heureActuelle >= 6 && heureActuelle < 12) {
+time ="Bonjour";
+} else if (heureActuelle >= 12 && heureActuelle < 18) {
+time ="Bonsoir";
+} else if (heureActuelle >= 18 && heureActuelle < 22) {
+time="Bonsoir";
+} else {
+time="Bonsoir";
+}
+
+
+TEXT.addEventListener("click",function(){
+IMG = "1";
+TEXT.style.display = "none";
+imgG.style.display = "block";
+});              
+
+imgG.addEventListener("click",function(){
+IMG = "0";
+imgG.style.display = "none";
+TEXT.style.display = "block";
+});              
+
+
+setTimeout(function(){
+
+if(modeS === "2"){
+document.body.style.background = "#232324";
+user.style.background = "#ffeeeeee";
+}
+},1000);
+send.addEventListener("click",function(){
+//statu = "1";
+event.preventDefault();
+setTimeout(function(){
+ query.value = "";
+ },500);
+
+setTimeout(function(){
+container.scrollTo(0, container.scrollHeight);   
+
+ },500);
+
+if(statu === "0" && query.value.length > 0){
+
+if(textU === "0"){
+div = document.createElement("div");
+div.id = "fl";
+div.class="d-flex justify-content-between";
+container.appendChild(div);
+
+msg = document.createElement("div");
+msg.id="user";
+container.appendChild(msg);
+
+img = document.createElement("img");
+img.id = "pic";
+img.src="user.png";
+div.appendChild(img);
+
+text = document.createElement("div");
+msg.innerText = query.value;
+//div.appendChild(text);
+btn= document.createElement("button");
+btn.id="copie";
+btn.innerTEXT= "copier";
+div.appendChild(msg);
+//msg.appendChild(btn);
+
+
+setTimeout(function(){
+div4 = document.createElement("div");
+div4.id = "fl";
+div4.class="d-flex justify-content-between";
+container.appendChild(div4);
+
+msg4 = document.createElement("div");
+msg4.id="bot";
+container.appendChild(msg4);
+
+img4 = document.createElement("img");
+img4.id = "pic";
+img4.src="icoAo.jpg";
+div4.appendChild(img4);
+
+if(IMG === "0"){
+msg4.innerText = "En train d'ecrire. . .";
+container.scrollTo(0, container.scrollHeight);   
+//div.appendChild(text);
+//msg.appendChild(btn);
+div4.appendChild(msg4);
+}else if(IMG === "1"){
+msg4.innerText = "En train de générer l'image. . .";
+container.scrollTo(0, container.scrollHeight);   
+//div.appendChild(text);
+//msg.appendChild(btn);
+div4.appendChild(msg4);
+}
+
+},500);
+
+//container.removeChild(div6);
+}
+statu = "1";
+
+let token = "CTAPI-298AXEiBnebHfpOyovbTqDHHHf";
+
+let UR = 'https://codingllama.codingteamapi.workers.dev/?token=CTAPI-298AXEiBnebHfpOyovbTqDHHHf&question='+query.value;
+
+//alert (8);
+if(IMG === "0"){
+
+//alert(UR);
+fetch(UR)
+ .then(response => response.json())
+ .then(data => {
+container.removeChild(div4);
+ DATA = data.bot;
+ statu = "0";
+//  console.log(data);
+   
+ div2 = document.createElement("div");
+ div2.id = "fl";
+ div2.class="d-flex justify-content-between";
+ container.appendChild(div2);
+ msg2= document.createElement("div");
+ msg2.id="bot";
+ container.appendChild(msg2);
+ 
+ img2 = document.createElement("img");
+ img2.id = "pic2";
+ img2.src="icoAo.jpg";
+ div2.appendChild(img2);
+ 
+ msg2.innerText = DATA;
+ //div.appendChild(text);
+ btn2= document.createElement("button");
+ btn2.id="copie2";
+ btn2.innerText = "Copier";
+ //msg.appendChild(btn);
+ div2.appendChild(msg2);
+ container.scrollTo(0, container.scrollHeight);   
+ })
+ .catch(error => {
+  statu = "1";
+
+setTimeout(function(){
+div5 = document.createElement("div");
+div5.id = "fl";
+div5.class="d-flex justify-content-between";
+container.appendChild(div5);
+
+msg5 = document.createElement("div");
+msg5.id="bot";
+container.appendChild(msg5);
+
+img5 = document.createElement("img");
+img5.id = "pic";
+img5.src="icoAo.jpg";
+div5.appendChild(img5);
+
+
+msg5.innerText = "Vous êtes hors ligne, vérifiez votre connection à internet!!";
+msg5.style.color = "ryed";
+msg5.style.background = "darkred";
+container.scrollTo(0, container.scrollHeight);   
+//div.appendChild(text);
+//msg.appendChild(btn);
+container.removeChild(div4);
+div5.appendChild(msg5);
+},500);
+
+   console.log(error);
+ });
+}
+
+if(IMG === "1"){
+const prompt =  query.value;
+const apiToken = "CTAPI-298AXEiBnebHfpOyovbTqDHHHf";
+const link = "https://imageai.codingteamapi.workers.dev/?gen=" + prompt + "&token=" + apiToken;
+                             fetch(link)
+                                .then(response => response.blob())
+                                .then(blob => {
+                                    const imageUrl = URL.createObjectURL(blob);
+         //     alert(blob);
+                container.removeChild(div4);
+                              div7 = document.createElement("div");
+                              div7.id = "fl";
+                              div7.class="d-flex justify-content-between";
+                              container.appendChild(div7);
+                              msg7= document.createElement("img");
+                              msg7.id="bot";
+                              msg7.class="img-fluid";
+                        //      msg7.setAttribute("download","");
+                              container.appendChild(msg7);
+                              
+                              img7 = document.createElement("img");
+                              img7.id = "pic";
+                              img7.src="icoAo.jpg";
+                              div7.appendChild(img7);
+                              
+                              msg7.src = imageUrl;
+                              //div.appendChild(text);
+                              btn7= document.createElement("button");
+                              btn7.id="copie2";
+                              btn7.innerText = "Copier";
+                              //msg.appendChild(btn);
+                              div7.appendChild(msg7);
+                              
+                              LIEN7= document.createElement("a");
+                              LIEN7.id="lien";
+                              LIEN7.innerText ="Télécharger";
+                              LIEN7.setAttribute("href", imageUrl);
+                             LIEN7.setAttribute("download", "DRX-INS-CHAT-"+heureActuelle+".png");
+                              container.appendChild(LIEN7);
+                              container.scrollTo(0, container.scrollHeight);   
+                              
+                                })
+                                .catch(error => {
+                                statu = "1";
+                                setTimeout(function(){
+                                
+                                
+                                msg8 = document.createElement("div");
+                                msg8id="bot";
+                                container.appendChild(msg8);
+                                
+                                img8= document.createElement("img");
+                                img8.id = "pic";
+                                img8.src="icoAo.jpg";
+                                div8.appendChild(img8);
+                                
+                                
+                                msg8.innerText = "Vous êtes hors ligne, vérifiez votre connection à internet!!";
+                                msg8.style.color = "ryed";
+                                msg8.style.background = "darkred";
+                                container.scrollTo(0, container.scrollHeight);   
+                                //div.appendChild(text);
+                                //msg.appendChild(btn);
+                                container.removeChild(div8);
+                                div8.appendChild(msg8);
+                                },500);
+                                
+                                    //console.error("Erreur lors de la requête à l'API", error);
+                                });
+           
+}             
+}
+
+});
+setInterval(function(){
+
+if(statu === "1"){
+let L =  'https://drx-beta.web.app';
+fetch(L)
+ .then(response => response.text())
+ .then(data => {
+ statu = "0";
+  msg5.innerText = "Connexion rétablie!!";
+  msg5.style.background = "darkgreen";
+})
+ .catch(error => {
+ msg5.innerText = "Toujours pas de connexion!!";
+ });
+ }
+ 
+},5000);
+
+mode.addEventListener("click",function(){
+if(modeS === "1"){
+modeS = "2"}
+else{
+modeS = "1";
+}});
+ setInterval(function(){
+ history.pushState(null,null,null);
+ if(modeS === "2"){
+ document.body.style.background = "#232324";
+ user.style.background = "#cbe0e0e0";
+ msg.style.background = "#cbe0e0e0";
+   hed.style.background = "#232324";
+   tn.innerHTML = "Nuit";
+ }else{
+ document.body.style.background = "";
+ user.style.background = "";
+ msg.style.background = "";
+  hed.style.background = "#ffe";
+  tn.innerHTML = "Jour";
+ }
+ },1000);
+ 
+ setTimeout(function(){
+ div6 = document.createElement("div");
+ div6.id = "fl";
+ div6.class="d-flex justify-content-between";
+ container.appendChild(div6);
+ 
+ msg6 = document.createElement("div");
+ msg6.id="bot";
+ container.appendChild(msg6);
+ 
+ img6 = document.createElement("img");
+ img6.id = "pic";
+ img6.src="icoAo.jpg";
+ div6.appendChild(img6);
+ 
+ 
+ msg6.innerHTML = time +"  "+"!! Bienvenue sur <em>DRX Instant-Chat</em> !! <br> La discussion n'a pas une historique, les messages sont supprimés après rechargement  ou après fermeture de la page";
+ //div.appendChild(text);
+ //msg.appendChild(btn);
+ div6.appendChild(msg6);
+container.scrollTo(0, container.scrollHeight);   
+ },1500);
+ 
+ 
+
+</script>
+</html>
+
